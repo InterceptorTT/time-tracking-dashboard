@@ -1,0 +1,180 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style-type: none;
+}
+
+img {
+  height: auto;
+}
+
+/* CONTAINER */
+body {
+  background: rgb(1, 1, 37);
+}
+body .container {
+  height: 30rem;
+  width: 75%;
+  margin: 0 auto;
+  padding: 5rem;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+body .container #left-col {
+  grid-row: 2 span;
+  grid-column: 1 span;
+  background: rgb(33, 33, 197);
+  border-radius: 20px;
+}
+body .container #left-col #character {
+  padding: 1.5rem;
+  border-radius: 20px;
+  background: rgb(69, 69, 225);
+  color: white;
+}
+body .container #left-col #character img {
+  height: 3.5rem;
+  width: 3.5rem;
+  margin-top: 3rem;
+}
+body .container #left-col #character p {
+  margin-top: 3rem;
+}
+body .container #left-col #character h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+body .container #left-col ul {
+  padding: 1.5rem;
+  margin-top: 3rem;
+}
+body .container #left-col ul a {
+  text-decoration: none;
+  color: white;
+}
+body .container #left-col ul a li {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 1rem;
+}
+body .container .card {
+  border-radius: 20px;
+  position: relative;
+}
+body .container .card svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body .container .card .subcard {
+  position: absolute;
+  bottom: 0;
+  top: 18%;
+  padding: 1.5rem;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  background: rgb(9, 9, 81);
+  color: white;
+}
+body .container .card .subcard p {
+  position: absolute;
+  top: 1rem;
+  font-size: 1.15rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .container .card .subcard svg {
+  position: absolute;
+  top: 1.15rem;
+  right: 1rem;
+}
+body .container .card .subcard .div-data {
+  position: absolute;
+  bottom: 3rem;
+}
+body .container .card .subcard .div-data .data {
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .container .card .subcard .div-data .prev-data {
+  font-size: 0.9rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .attribution {
+  color: white;
+}
+body .attribution a {
+  text-decoration: none;
+  color: white;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+  body .container {
+    grid-template-columns: 1fr;
+    padding: 0.5rem;
+  }
+  body .container #left-col {
+    grid-column: 1;
+  }
+  body .container .card {
+    height: 10rem;
+    grid-column: 1;
+  }
+  body .container .card .subcard .div-data {
+    position: absolute;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+  }
+  body .container .card .subcard .div-data .data {
+    font-size: 1.5rem;
+  }
+  body .container .card .subcard .div-data .prev-data {
+    font-size: 0.9rem;
+  }
+}
+.card.work {
+  background: coral;
+}
+
+.card.play {
+  background: rgb(100, 252, 252);
+}
+
+.card.study {
+  background: #ea3333;
+}
+
+.card.excercise {
+  background: #60ff5b;
+}
+
+.card.social {
+  background: #902cd2;
+}
+
+.card.self-care {
+  background: #fce42f;
+}/*# sourceMappingURL=index.css.map */
